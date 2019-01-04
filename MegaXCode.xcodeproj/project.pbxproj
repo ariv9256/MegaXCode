@@ -97,12 +97,9 @@
 		0FC0BF3921DFF6F400AAB4D7 /* MegaXCode */ = {
 			isa = PBXGroup;
 			children = (
-				0FC0BF3A21DFF6F400AAB4D7 /* AppDelegate.swift */,
-				0FC0BF3C21DFF6F400AAB4D7 /* ViewController.swift */,
-				0FC0BF3E21DFF6F400AAB4D7 /* Main.storyboard */,
-				0FC0BF4121DFF6F600AAB4D7 /* Assets.xcassets */,
-				0FC0BF4321DFF6F600AAB4D7 /* LaunchScreen.storyboard */,
-				0FC0BF4621DFF6F600AAB4D7 /* Info.plist */,
+				0FC0BF6821DFF74D00AAB4D7 /* Resources */,
+				0FC0BF6921DFF75600AAB4D7 /* Controller */,
+				0FC0BF6A21DFF76300AAB4D7 /* View */,
 			);
 			path = MegaXCode;
 			sourceTree = "<group>";
@@ -123,6 +120,65 @@
 				0FC0BF5C21DFF6F600AAB4D7 /* Info.plist */,
 			);
 			path = MegaXCodeUITests;
+			sourceTree = "<group>";
+		};
+		0FC0BF6821DFF74D00AAB4D7 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				0FC0BF3A21DFF6F400AAB4D7 /* AppDelegate.swift */,
+				0FC0BF4121DFF6F600AAB4D7 /* Assets.xcassets */,
+				0FC0BF4621DFF6F600AAB4D7 /* Info.plist */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		0FC0BF6921DFF75600AAB4D7 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				0FC0BF6E21DFF77E00AAB4D7 /* Data */,
+				0FC0BF6D21DFF77C00AAB4D7 /* Creativity */,
+				0FC0BF6C21DFF77900AAB4D7 /* Abstraction */,
+				0FC0BF6B21DFF77700AAB4D7 /* New Group */,
+				0FC0BF3C21DFF6F400AAB4D7 /* ViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		0FC0BF6A21DFF76300AAB4D7 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				0FC0BF3E21DFF6F400AAB4D7 /* Main.storyboard */,
+				0FC0BF4321DFF6F600AAB4D7 /* LaunchScreen.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		0FC0BF6B21DFF77700AAB4D7 /* New Group */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "New Group";
+			sourceTree = "<group>";
+		};
+		0FC0BF6C21DFF77900AAB4D7 /* Abstraction */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Abstraction;
+			sourceTree = "<group>";
+		};
+		0FC0BF6D21DFF77C00AAB4D7 /* Creativity */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Creativity;
+			sourceTree = "<group>";
+		};
+		0FC0BF6E21DFF77E00AAB4D7 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Data;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -433,7 +489,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = MegaXCode/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/MegaXCode/Resources/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -450,7 +506,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = MegaXCode/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/MegaXCode/Resources/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
