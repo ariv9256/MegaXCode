@@ -14,11 +14,10 @@
 		0FC0BF5B21DFF6F600AAB4D7 /* MegaXCodeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FC0BF5A21DFF6F600AAB4D7 /* MegaXCodeUITests.swift */; };
 		0FC0BF7121DFF8E800AAB4D7 /* DrawingCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FC0BF6F21DFF8E800AAB4D7 /* DrawingCollectionViewController.swift */; };
 		0FC0BF7221DFF8E800AAB4D7 /* DrawingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FC0BF7021DFF8E800AAB4D7 /* DrawingViewController.swift */; };
-		0FC0BF7521DFF90A00AAB4D7 /* DataViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FC0BF7321DFF90A00AAB4D7 /* DataViewController.swift */; };
-		0FC0BF7621DFF90A00AAB4D7 /* BucketItemCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FC0BF7421DFF90A00AAB4D7 /* BucketItemCell.swift */; };
 		0FC0BF7B21DFF95900AAB4D7 /* AbstractionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FC0BF7A21DFF95900AAB4D7 /* AbstractionViewController.swift */; };
 		0FC0BF7E21DFF99A00AAB4D7 /* DrawingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FC0BF7C21DFF99A00AAB4D7 /* DrawingView.swift */; };
 		0FC0BF7F21DFF99A00AAB4D7 /* ArtCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FC0BF7D21DFF99A00AAB4D7 /* ArtCell.swift */; };
+		0FC0BF8521DFFA7B00AAB4D7 /* BucketItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FC0BF8421DFFA7B00AAB4D7 /* BucketItem.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,12 +51,14 @@
 		0FC0BF5C21DFF6F600AAB4D7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0FC0BF6F21DFF8E800AAB4D7 /* DrawingCollectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DrawingCollectionViewController.swift; path = ../../../../DrawingProject/DrawingProject/Controller/DrawingCollectionViewController.swift; sourceTree = "<group>"; };
 		0FC0BF7021DFF8E800AAB4D7 /* DrawingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DrawingViewController.swift; path = ../../../../DrawingProject/DrawingProject/Controller/DrawingViewController.swift; sourceTree = "<group>"; };
-		0FC0BF7321DFF90A00AAB4D7 /* DataViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DataViewController.swift; path = ../../../../DataProj/DataProj/Controller/DataViewController.swift; sourceTree = "<group>"; };
-		0FC0BF7421DFF90A00AAB4D7 /* BucketItemCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = BucketItemCell.swift; path = ../../../../DataProj/DataProj/Controller/BucketItemCell.swift; sourceTree = "<group>"; };
 		0FC0BF7921DFF93400AAB4D7 /* AlgorithmViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlgorithmViewController.swift; sourceTree = "<group>"; };
 		0FC0BF7A21DFF95900AAB4D7 /* AbstractionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AbstractionViewController.swift; path = ../../../../AbstractionApp/AbstractionApp/Controller/AbstractionViewController.swift; sourceTree = "<group>"; };
 		0FC0BF7C21DFF99A00AAB4D7 /* DrawingView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DrawingView.swift; path = ../../../DrawingProject/DrawingProject/View/DrawingView.swift; sourceTree = "<group>"; };
 		0FC0BF7D21DFF99A00AAB4D7 /* ArtCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ArtCell.swift; path = ../../../DrawingProject/DrawingProject/View/ArtCell.swift; sourceTree = "<group>"; };
+		0FC0BF8221DFFA5200AAB4D7 /* DataViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataViewController.swift; sourceTree = "<group>"; };
+		0FC0BF8321DFFA5400AAB4D7 /* BucketItemCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BucketItemCell.swift; sourceTree = "<group>"; };
+		0FC0BF8421DFFA7B00AAB4D7 /* BucketItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = BucketItem.swift; path = ../../../../../DataProj/DataProj/Model/BucketItem.swift; sourceTree = "<group>"; };
+		0FC0BF8921DFFAC500AAB4D7 /* AlgorithmModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlgorithmModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -167,7 +168,8 @@
 		0FC0BF6B21DFF77700AAB4D7 /* Algorithm */ = {
 			isa = PBXGroup;
 			children = (
-				0FC0BF7921DFF93400AAB4D7 /* AlgorithmViewController.swift */,
+				0FC0BF8821DFFAC500AAB4D7 /* Algorithm Model */,
+				0FC0BF8A21DFFADA00AAB4D7 /* Algorithm Controller */,
 			);
 			path = Algorithm;
 			sourceTree = "<group>";
@@ -192,10 +194,43 @@
 		0FC0BF6E21DFF77E00AAB4D7 /* Data */ = {
 			isa = PBXGroup;
 			children = (
-				0FC0BF7421DFF90A00AAB4D7 /* BucketItemCell.swift */,
-				0FC0BF7321DFF90A00AAB4D7 /* DataViewController.swift */,
+				0FC0BF8121DFFA4E00AAB4D7 /* Data Controller */,
+				0FC0BF8021DFFA4B00AAB4D7 /* Data Model */,
 			);
 			path = Data;
+			sourceTree = "<group>";
+		};
+		0FC0BF8021DFFA4B00AAB4D7 /* Data Model */ = {
+			isa = PBXGroup;
+			children = (
+				0FC0BF8421DFFA7B00AAB4D7 /* BucketItem.swift */,
+			);
+			path = "Data Model";
+			sourceTree = "<group>";
+		};
+		0FC0BF8121DFFA4E00AAB4D7 /* Data Controller */ = {
+			isa = PBXGroup;
+			children = (
+				0FC0BF8321DFFA5400AAB4D7 /* BucketItemCell.swift */,
+				0FC0BF8221DFFA5200AAB4D7 /* DataViewController.swift */,
+			);
+			path = "Data Controller";
+			sourceTree = "<group>";
+		};
+		0FC0BF8821DFFAC500AAB4D7 /* Algorithm Model */ = {
+			isa = PBXGroup;
+			children = (
+				0FC0BF8921DFFAC500AAB4D7 /* AlgorithmModel.swift */,
+			);
+			path = "Algorithm Model";
+			sourceTree = "<group>";
+		};
+		0FC0BF8A21DFFADA00AAB4D7 /* Algorithm Controller */ = {
+			isa = PBXGroup;
+			children = (
+				0FC0BF7921DFF93400AAB4D7 /* AlgorithmViewController.swift */,
+			);
+			path = "Algorithm Controller";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -329,9 +364,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				0FC0BF7E21DFF99A00AAB4D7 /* DrawingView.swift in Sources */,
-				0FC0BF7621DFF90A00AAB4D7 /* BucketItemCell.swift in Sources */,
 				0FC0BF7221DFF8E800AAB4D7 /* DrawingViewController.swift in Sources */,
-				0FC0BF7521DFF90A00AAB4D7 /* DataViewController.swift in Sources */,
+				0FC0BF8521DFFA7B00AAB4D7 /* BucketItem.swift in Sources */,
 				0FC0BF3B21DFF6F400AAB4D7 /* AppDelegate.swift in Sources */,
 				0FC0BF7121DFF8E800AAB4D7 /* DrawingCollectionViewController.swift in Sources */,
 				0FC0BF7B21DFF95900AAB4D7 /* AbstractionViewController.swift in Sources */,
