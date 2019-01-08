@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -9,16 +12,404 @@
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="MegaXCode" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QBz-F8-suX">
+                                <rect key="frame" x="123" y="109" width="129" height="87"/>
+                                <state key="normal" title="Data"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ne1-qI-3KD">
+                                <rect key="frame" x="123" y="227" width="129" height="86.5"/>
+                                <state key="normal" title="Drawing"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Hxo-tX-W04">
+                                <rect key="frame" x="123" y="336.5" width="129" height="87"/>
+                                <state key="normal" title="Algorithm"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5gv-Zv-rPt">
+                                <rect key="frame" x="123" y="460.5" width="129" height="86.5"/>
+                                <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="15"/>
+                                <state key="normal" title="Abstraction"/>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="5gv-Zv-rPt" secondAttribute="bottom" constant="120" id="2s3-wp-ulD"/>
+                            <constraint firstItem="QBz-F8-suX" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="89" id="5jd-lF-N6D"/>
+                            <constraint firstItem="QBz-F8-suX" firstAttribute="leading" secondItem="ne1-qI-3KD" secondAttribute="leading" id="6j1-TF-E98"/>
+                            <constraint firstItem="ne1-qI-3KD" firstAttribute="top" secondItem="QBz-F8-suX" secondAttribute="bottom" constant="31" id="GJ6-8q-dXt"/>
+                            <constraint firstItem="Hxo-tX-W04" firstAttribute="height" secondItem="QBz-F8-suX" secondAttribute="height" id="Oks-lh-Rsb"/>
+                            <constraint firstItem="ne1-qI-3KD" firstAttribute="leading" secondItem="5gv-Zv-rPt" secondAttribute="leading" id="SLm-zk-laK"/>
+                            <constraint firstItem="5gv-Zv-rPt" firstAttribute="width" secondItem="QBz-F8-suX" secondAttribute="width" id="Tpa-rt-2Oz"/>
+                            <constraint firstItem="Hxo-tX-W04" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="VpA-pG-wEm"/>
+                            <constraint firstItem="Hxo-tX-W04" firstAttribute="top" secondItem="ne1-qI-3KD" secondAttribute="bottom" constant="23" id="W5o-8y-qec"/>
+                            <constraint firstItem="ne1-qI-3KD" firstAttribute="width" secondItem="QBz-F8-suX" secondAttribute="width" id="bcE-8H-kZ2"/>
+                            <constraint firstItem="QBz-F8-suX" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="123" id="hgk-Bi-ZzA"/>
+                            <constraint firstItem="5gv-Zv-rPt" firstAttribute="top" secondItem="Hxo-tX-W04" secondAttribute="bottom" constant="37" id="pXa-OY-adm"/>
+                            <constraint firstItem="Hxo-tX-W04" firstAttribute="width" secondItem="QBz-F8-suX" secondAttribute="width" id="up7-Bb-bnQ"/>
+                            <constraint firstItem="ne1-qI-3KD" firstAttribute="trailing" secondItem="Hxo-tX-W04" secondAttribute="trailing" id="wGZ-Fr-oqP"/>
+                            <constraint firstItem="5gv-Zv-rPt" firstAttribute="height" secondItem="QBz-F8-suX" secondAttribute="height" id="xsM-6o-AsO"/>
+                            <constraint firstItem="ne1-qI-3KD" firstAttribute="height" secondItem="QBz-F8-suX" secondAttribute="height" id="zb7-lV-HAV"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="-415.19999999999999" y="-100.29985007496252"/>
+        </scene>
+        <!--Drawing View Controller-->
+        <scene sceneID="vZr-vC-AEq">
+            <objects>
+                <viewController id="lsf-qe-y1C" customClass="DrawingViewController" customModule="DrawingProject" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8cz-V1-3tS">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="8r3-kt-myA" customClass="DrawingView" customModule="DrawingProject" customModuleProvider="target">
+                                <rect key="frame" x="87" y="50" width="240" height="382"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.45085787770000002" green="0.98829740290000001" blue="0.83763033149999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5ic-nu-LS2">
+                                <rect key="frame" x="155" y="501" width="105" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <accessibility key="accessibilityConfiguration" label="Change Screen"/>
+                                <state key="normal" title="Change Screen"/>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <viewLayoutGuide key="safeArea" id="FVn-N1-jiW"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="sUI-Hs-WNp" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3284" y="-944"/>
+        </scene>
+        <!--Drawing Collection View Controller-->
+        <scene sceneID="efO-AZ-7Rc">
+            <objects>
+                <collectionViewController id="x7Z-tN-3DN" customClass="DrawingCollectionViewController" customModule="DrawingProject" customModuleProvider="target" sceneMemberID="viewController">
+                    <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" id="g7e-SJ-5qg">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="0.47684186699999997" green="0.50480759139999998" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="moM-b2-mds">
+                            <size key="itemSize" width="200" height="238"/>
+                            <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                            <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                            <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                        </collectionViewFlowLayout>
+                        <cells>
+                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="artidentifier" id="W7m-kh-UNr" customClass="ArtCell" customModule="DrawingProject" customModuleProvider="target">
+                                <rect key="frame" x="87.5" y="0.0" width="200" height="238"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
+                                    <rect key="frame" x="0.0" y="0.0" width="200" height="238"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="12" adjustsLetterSpacingToFitWidth="YES" translatesAutoresizingMaskIntoConstraints="NO" id="fgs-ut-cWw" userLabel="Art Label">
+                                            <rect key="frame" x="0.0" y="176" width="200" height="62"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="HFp-IZ-tkL" userLabel="Art Image">
+                                            <rect key="frame" x="0.0" y="-13" width="200" height="190"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <color key="backgroundColor" red="0.28544523350000001" green="0.29559572509999998" blue="0.58052427029999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <color key="tintColor" red="0.27271397279999998" green="0.29164465249999999" blue="0.58052427029999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </imageView>
+                                    </subviews>
+                                </view>
+                                <color key="backgroundColor" red="0.2879411852" green="0.2981804334" blue="0.58560041240000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <connections>
+                                    <outlet property="artImage" destination="HFp-IZ-tkL" id="Xxe-4X-cY3"/>
+                                    <outlet property="artLabel" destination="fgs-ut-cWw" id="6Iq-do-jQW"/>
+                                </connections>
+                            </collectionViewCell>
+                        </cells>
+                        <connections>
+                            <outlet property="dataSource" destination="x7Z-tN-3DN" id="BRB-dl-ExR"/>
+                            <outlet property="delegate" destination="x7Z-tN-3DN" id="nhd-2u-fuA"/>
+                        </connections>
+                    </collectionView>
+                </collectionViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="tvU-27-qzK" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4084" y="-945"/>
+        </scene>
+        <!--Data View Controller-->
+        <scene sceneID="h1u-TU-HiT">
+            <objects>
+                <tableViewController id="jeA-wt-u8B" customClass="DataViewController" customModule="DataProj" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="gZ7-BB-fvP">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="dataIdentifier" rowHeight="106" id="PKu-uV-B1J" customClass="BucketItemCell" customModule="DataProj" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="28" width="375" height="106"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="PKu-uV-B1J" id="vp0-sV-HBw">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="105.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="bucket item here" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Jlu-OT-m79">
+                                            <rect key="frame" x="115" y="11" width="233" height="57"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="V50-hr-fIq">
+                                            <rect key="frame" x="212" y="76" width="48" height="19"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <attributedString key="attributedText">
+                                                <fragment content="Author">
+                                                    <attributes>
+                                                        <font key="NSFont" size="17" name="Times-Italic"/>
+                                                        <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                    </attributes>
+                                                </fragment>
+                                            </attributedString>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="A" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9gZ-7I-61c">
+                                            <rect key="frame" x="46" y="34" width="20" height="36"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="bucketItemSignature" destination="V50-hr-fIq" id="Ke5-8M-Gcr"/>
+                                    <outlet property="bucketItemSymbol" destination="9gZ-7I-61c" id="IUL-TG-cnu"/>
+                                    <outlet property="bucketItemText" destination="Jlu-OT-m79" id="32E-3j-hcQ"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="jeA-wt-u8B" id="SYP-gV-DKM"/>
+                            <outlet property="delegate" destination="jeA-wt-u8B" id="bSB-kf-MGR"/>
+                        </connections>
+                    </tableView>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="CGA-01-SgM" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1442" y="-944"/>
+        </scene>
+        <!--Swift Code-->
+        <scene sceneID="Z0f-9F-RbI">
+            <objects>
+                <viewController storyboardIdentifier="SwiftViewController" title="Swift Code" id="4cB-6b-Eox" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="6xU-PA-cqr">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="12" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kkh-yA-DdE">
+                                <rect key="frame" x="57" y="333" width="261" height="281"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <string key="text">Swift code is pretty abstract in the scheme of instructional programs, the topics and guidelines in swift are far different than other programs such as Python, Java, or C languages. I would say swift is more abstract than block code but rather median in difficulty.</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="SwiftCode" translatesAutoresizingMaskIntoConstraints="NO" id="uji-Tg-TVD">
+                                <rect key="frame" x="18" y="83" width="338" height="228"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="0.49327188729999999" blue="0.47399842739999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <viewLayoutGuide key="safeArea" id="omc-Pk-YzX"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="3KG-hW-z73" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2210" y="639"/>
+        </scene>
+        <!--Block Code-->
+        <scene sceneID="U3m-Ve-zSb">
+            <objects>
+                <viewController storyboardIdentifier="BlockViewController" title="Block Code" id="bYd-CV-dvp" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="2qq-2I-yVA">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="13" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Xcv-ZQ-PbO">
+                                <rect key="frame" x="40" y="311" width="281" height="325"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <string key="text">Block code is the least abstract topic of programming due to being extremely self explanatory, the code is created for you in very basic english code blocks already pre-made for usage. This is the easiest source of coding and that often leads to limitations in possibility, it’s difficult to create very detailed, specific projects with basic english code such as Scratch and AppInventor.</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="BlockCode" translatesAutoresizingMaskIntoConstraints="NO" id="Af9-hv-JSa">
+                                <rect key="frame" x="33" y="51" width="295" height="244"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.99953407049999998" green="0.98835557699999999" blue="0.47265523669999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <viewLayoutGuide key="safeArea" id="RlI-o6-C3G"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="aPQ-Fj-SGk" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2855" y="638"/>
+        </scene>
+        <!--Object Code-->
+        <scene sceneID="lyo-bN-VTO">
+            <objects>
+                <viewController storyboardIdentifier="ByteCodeViewController" title="Object Code" id="iJg-Vt-TOW" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="em9-VM-8fl">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="15" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SOO-cu-2RA">
+                                <rect key="frame" x="43" y="335" width="289" height="220"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <string key="text">Object Oriented code is more abstract than the Swift language because of the difficult concepts; rules and guidelines are very non-user friendly in understanding, meaning the topics are hard to learn with little experience.</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="ObjectOrientCode" translatesAutoresizingMaskIntoConstraints="NO" id="v52-Bv-8m5">
+                                <rect key="frame" x="28" y="53" width="318" height="241"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.45009386540000001" green="0.98132258650000004" blue="0.4743030667" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <viewLayoutGuide key="safeArea" id="PDp-Ih-WfQ"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Eau-7G-gUc" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3487" y="640"/>
+        </scene>
+        <!--Binary Code-->
+        <scene sceneID="M6Y-X3-Xen">
+            <objects>
+                <viewController storyboardIdentifier="BinaryViewController" title="Binary Code" id="Dd0-BT-IrE" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="qkD-51-sbd">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="BinaryCode" translatesAutoresizingMaskIntoConstraints="NO" id="kt9-nG-cKO">
+                                <rect key="frame" x="48" y="144" width="278" height="165"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="15" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="01R-Zc-xPA">
+                                <rect key="frame" x="42" y="346" width="291" height="232"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <string key="text">Binary code is way more abstract than swift and object oriented / byte code, binary is extremely specific and unique when writing / speaking in it. Only using two numbers as a means of communication is a very abstract concept to grasp.
+</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.46202266219999999" green="0.83828371759999998" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <viewLayoutGuide key="safeArea" id="Lv1-nA-AYe"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="O9Z-3o-cqL" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4119" y="638"/>
+        </scene>
+        <!--Logic Gate-->
+        <scene sceneID="AEB-KH-ylg">
+            <objects>
+                <viewController storyboardIdentifier="LogicalGateViewController" title="Logic Gate" id="SiO-Pf-dsA" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="yMb-vO-rdH">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="LogicGate" translatesAutoresizingMaskIntoConstraints="NO" id="Rxg-hg-VOD">
+                                <rect key="frame" x="32" y="77" width="311" height="216"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="12" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cMj-Np-BhE">
+                                <rect key="frame" x="57" y="329" width="250" height="274"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <string key="text">Logic gate is the most abstract, even more abstract than binary. Logic gate is the beginning of object oriented themes in a physical machine that’s no longer in use. The logic gate is extremely strange to navigate and is too abstract for beginners.</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.84465640779999995" green="0.51457053419999998" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <viewLayoutGuide key="safeArea" id="eII-Wb-z1G"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="3x7-WV-auO" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4750" y="637"/>
+        </scene>
+        <!--Abstraction View Controller-->
+        <scene sceneID="T8r-3n-G2v">
+            <objects>
+                <pageViewController autoresizesArchivedViewToFullSize="NO" transitionStyle="scroll" navigationOrientation="horizontal" spineLocation="none" id="DEw-GS-Aha" customClass="AbstractionViewController" customModule="AbstractionApp" customModuleProvider="target" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="g7V-eU-Nkf" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3486" y="-48"/>
+        </scene>
+        <!--Algorithm View Controller-->
+        <scene sceneID="9Ng-Ee-LRh">
+            <objects>
+                <viewController id="a5f-R6-jdZ" customClass="AlgorithmViewController" customModule="AlgorithmProj" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="0db-Pr-036">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" usesAttributedText="YES" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4ow-qW-PEv" userLabel="algorithmText">
+                                <rect key="frame" x="0.0" y="41" width="376" height="314"/>
+                                <attributedString key="attributedText">
+                                    <fragment content="Algorithm">
+                                        <attributes>
+                                            <font key="NSFont" size="9" name=".SFNSText"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="kcd-X0-9tu">
+                                <rect key="frame" x="0.0" y="264" width="375" height="258"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="128" id="cYA-6m-eVZ"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="kcd-X0-9tu" firstAttribute="leading" secondItem="0db-Pr-036" secondAttribute="leading" id="ATV-5s-5lN"/>
+                            <constraint firstAttribute="trailing" secondItem="kcd-X0-9tu" secondAttribute="trailing" id="OXl-W4-yF9"/>
+                            <constraint firstItem="zTS-9a-5k9" firstAttribute="bottom" secondItem="kcd-X0-9tu" secondAttribute="bottom" constant="256" id="Wfs-SG-vdx"/>
+                            <constraint firstItem="kcd-X0-9tu" firstAttribute="top" secondItem="4ow-qW-PEv" secondAttribute="bottom" constant="92" id="YQ7-2H-ADz"/>
+                            <constraint firstItem="kcd-X0-9tu" firstAttribute="centerX" secondItem="4ow-qW-PEv" secondAttribute="centerX" id="hZW-Nh-PwT"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="zTS-9a-5k9"/>
+                    </view>
+                    <connections>
+                        <outlet property="algorithmText" destination="4ow-qW-PEv" id="tr0-yF-DJj"/>
+                        <outlet property="swiftImage" destination="kcd-X0-9tu" id="bp6-VC-LE8"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="F65-NI-rXU" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="482" y="638"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="BinaryCode" width="490" height="300"/>
+        <image name="BlockCode" width="252" height="285"/>
+        <image name="LogicGate" width="500" height="388"/>
+        <image name="ObjectOrientCode" width="430" height="371"/>
+        <image name="SwiftCode" width="512" height="203"/>
+    </resources>
 </document>
