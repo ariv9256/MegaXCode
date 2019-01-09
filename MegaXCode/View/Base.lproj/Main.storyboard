@@ -19,23 +19,43 @@
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QBz-F8-suX">
                                 <rect key="frame" x="123" y="109" width="129" height="87"/>
-                                <state key="normal" title="Data"/>
+                                <state key="normal" title="Data">
+                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                </state>
+                                <connections>
+                                    <segue destination="jeA-wt-u8B" kind="show" id="cE5-gT-A8X"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ne1-qI-3KD">
                                 <rect key="frame" x="123" y="227" width="129" height="86.5"/>
-                                <state key="normal" title="Drawing"/>
+                                <state key="normal" title="Drawing">
+                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                </state>
+                                <connections>
+                                    <segue destination="lsf-qe-y1C" kind="show" id="pH7-Hz-4Ef"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Hxo-tX-W04">
                                 <rect key="frame" x="123" y="336.5" width="129" height="87"/>
-                                <state key="normal" title="Algorithm"/>
+                                <state key="normal" title="Algorithm">
+                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                </state>
+                                <connections>
+                                    <segue destination="a5f-R6-jdZ" kind="show" id="jTB-ra-Ye6"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5gv-Zv-rPt">
                                 <rect key="frame" x="123" y="460.5" width="129" height="86.5"/>
                                 <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="15"/>
-                                <state key="normal" title="Abstraction"/>
+                                <state key="normal" title="Abstraction">
+                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                </state>
+                                <connections>
+                                    <segue destination="DEw-GS-Aha" kind="show" id="wyj-Xa-C6M"/>
+                                </connections>
                             </button>
                         </subviews>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" red="0.47684186699999997" green="0.50480759139999998" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="5gv-Zv-rPt" secondAttribute="bottom" constant="120" id="2s3-wp-ulD"/>
                             <constraint firstItem="QBz-F8-suX" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="89" id="5jd-lF-N6D"/>
@@ -79,6 +99,9 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <accessibility key="accessibilityConfiguration" label="Change Screen"/>
                                 <state key="normal" title="Change Screen"/>
+                                <connections>
+                                    <segue destination="x7Z-tN-3DN" kind="show" id="S6O-Qx-5u7"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
